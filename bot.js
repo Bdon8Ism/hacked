@@ -7,7 +7,7 @@ const bot5 = new Discord.Client();
 const bot6 = new Discord.Client();
 const bot7 = new Discord.Client();
 const bot8 = new Discord.Client();
-   const ID = '474573718967025665';
+   const ID2 = '474573718967025665';
 
 bot1.on('ready', () => {
   console.log('')
