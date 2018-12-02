@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const bot1 = new Discord.Client();
 
-   const ID2 = '474573718967025665';
+   const ID2 = '488970510013693962';
 
 bot1.on('ready', () => {
   console.log('')
