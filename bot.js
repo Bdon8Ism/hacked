@@ -32,538 +32,269 @@ bot1.on('ready', () => {
   console.log('')
   console.log('')
 });
+
+
+bot1.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-
- bot1.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-
-
-///////////////////////////////////////////////
-
-bot1.on(`ready`, () => {
-   let channel = bot1.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send("Hello")
-    }, 900);
-});
-///////////////////////////////////////
-
-bot1.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say41") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
-/////////////////////////////
-
-
-bot1.on('message', message => {
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
-
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
  bot2.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////
-
-
-////////////////////////////////
-
-bot2.on(`ready`, () => {
-   let channel = bot2.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send("spam too fast 97??")
-    }, 900);
-});
-
-/////////////////////////////////////
-
-bot2.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say42") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-/////////////////////////////////////////
-
-bot2.on('message', message => {
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
  bot3.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////////
-
-
-////////////////////////////////////
-
-bot3.on(`ready`, () => {
-   let channel = bot3.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send(args1)
-    }, 900);
-});
-//////////////////////////////////
-
-
-
-
-bot3.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say43") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-////////////////////////////////////
-
-
-bot3.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-bot4.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////////
-
-
-////////////////////////////////////
-const args1 = ['hi','hola','hello','i love u so much']
-bot4.on(`ready`, () => {
-   let channel = bot4.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send(args1)
-    }, 900);
-});
-//////////////////////////////////
-
-
-
-
-bot4.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say44") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-////////////////////////////////////
-
-
-bot4.on('message', message => {
+ bot4.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-bot5.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////////
-
-
-////////////////////////////////////
-
-bot5.on(`ready`, () => {
-   let channel = bot5.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send(args1)
-    }, 900);
-});
-//////////////////////////////////
-
-
-
-
-bot5.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say45") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-////////////////////////////////////
-
-
-bot5.on('message', message => {
+ bot5.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-bot6.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////////
-
-
-////////////////////////////////////
-
-bot6.on(`ready`, () => {
-   let channel = bot6.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send(args1)
-    }, 900);
-});
-//////////////////////////////////
-
-
-
-
-bot6.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say46") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-////////////////////////////////////
-
-
-bot6.on('message', message => {
+ bot6.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-bot7.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////////
-
-
-////////////////////////////////////
-
-bot7.on(`ready`, () => {
-   let channel = bot7.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send(args1)
-    }, 900);
-});
-//////////////////////////////////
-
-
-
-
-bot7.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say47") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-////////////////////////////////////
-
-
-bot7.on('message', message => {
+ bot7.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-bot8.on('message', message => {
-  
-  if (message.content === 'daily') {
-
-message.channel.send('#daily')
-}
-});
-
-/////////////////////////////////////////
-
-
-////////////////////////////////////
-
-bot8.on(`ready`, () => {
-   let channel = bot8.guilds.get("518173369682886656").channels.find(c => c.id == "518173369682886661");
-   setInterval(function() {
-    channel.send(args1)
-    }, 900);
-});
-//////////////////////////////////
-
-
-
-
-bot8.on('message', message => {
-  if (message.author.bot) return;
-  let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-  if(!args) return message.channel.send(`say1 <words>`);
-if (command == "say48") {
-message.channel.send(args.join("  "))
-    message.delete();
-  }
-});
-
-////////////////////////////////////
-
-
-bot8.on('message', message => {
+ bot8.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
  
- if (!ID.includes(message.author.id)) return;
-
- let command = message.content.split(" ")[0];
-  let args = message.content.split(" ").slice(1);
-if (command == "saySpam5") {
-message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
-  }
-});
-
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
 
 
 
-///////////////////////////////////////////////////////
+ bot9.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot10.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot11.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot12.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot13.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot14.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+ bot15.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+ bot16.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ 
+ 
+ bot17.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot18.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot19.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+ bot20.on('message', message => {
+  if (!ID2.includes(message.author.id)) return;
+ 
+   let command = message.content.split(" ")[0];
+   let args = message.content.split(" ").slice(1);
+   if(!args) return message.channel.send(`say <words>`);
+ if (command == "say") {
+ message.channel.send(args.join("  ")).then(msg => msg.delete(3000));
+   }
+ });
+
+
+
+
 
 bot1.login(process.env.FB1);
 bot2.login(process.env.FB2);
@@ -573,3 +304,16 @@ bot5.login(process.env.FB5);
 bot6.login(process.env.FB6);
 bot7.login(process.env.FB7);
 bot8.login(process.env.FB8);
+bot8.login(process.env.FB1);
+bot9.login(process.env.FB1);
+bot10.login(process.env.FB1);
+bot11.login(process.env.FB1);
+bot12.login(process.env.FB1);
+bot13.login(process.env.FB1);
+bot14.login(process.env.FB1);
+bot15.login(process.env.FB1);
+bot16.login(process.env.FB1);
+bot17.login(process.env.FB1);
+bot18.login(process.env.FB1);
+bot19.login(process.env.FB1);
+bot20.login(process.env.FB1);
