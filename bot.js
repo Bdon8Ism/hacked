@@ -7,6 +7,19 @@ const bot5 = new Discord.Client();
 const bot6 = new Discord.Client();
 const bot7 = new Discord.Client();
 const bot8 = new Discord.Client();
+const bot9 = new Discord.Client();
+const bot10 = new Discord.Client();
+const bot11 = new Discord.Client();
+const bot12 = new Discord.Client();
+const bot13 = new Discord.Client();
+const bot14 = new Discord.Client();
+const bot15 = new Discord.Client();
+const bot16 = new Discord.Client();
+const bot17 = new Discord.Client();
+const bot18 = new Discord.Client();
+const bot19 = new Discord.Client();
+const bot20 = new Discord.Client();
+
    const ID2 = '474573718967025665';
 
 bot1.on('ready', () => {
